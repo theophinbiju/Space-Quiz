@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/Space_Quiz/score.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Koulen&family=Nunito&family=Pathway+Gothic+One&family=Raleway&family=Righteous&display=swap" rel="stylesheet">
+    <title>Great Job</title>
+</head>
+<body>
+    <div class="large">
+        <div class="main">
+            <h1 class="great">Good Effort</h1>
+            <h2 class="score_is">Your Final Score is:</h2>
+            <h2 class="score">{{session.get('user_score')}}</h2>
+        </div>
+
+        <form action="/Space">
+            <button type="submit" class="try">TRY AGAIN</button>
+        </form>
+    </div>
+</body>
+</html>
